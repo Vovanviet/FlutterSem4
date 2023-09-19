@@ -20,3 +20,8 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets: 
+    - assets/image/hanoi.png
+    - assets/image/saigon.png
+    - assets/image/hoian.png
+    - assets/image/nhatrang.png
