@@ -10,4 +10,5 @@ import lombok.*;
 public class Place {
     private String name;
     private String image;
+    private Double rate;
 }

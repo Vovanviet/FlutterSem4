@@ -14,10 +14,10 @@ public class PlaceController {
     @GetMapping
     public ResponseEntity<?> getAll(){
         List<Place> placeList = new LinkedList<>();
-        placeList.add(Place.builder().name("Hà Nội").image("assets/images/hanoi.png").build());
-        placeList.add(Place.builder().name("Sài gòn").image("assets/images/saigon.png").build());
-        placeList.add(Place.builder().name("Hội An").image("assets/images/hoian.png").build());
-        placeList.add(Place.builder().name("Nha Trang").image("assets/images/nhatrang.png").build());
+        placeList.add(Place.builder().name("Hà Nội").image("assets/images/hanoi.png").rate(5.0).build());
+        placeList.add(Place.builder().name("Sài gòn").image("assets/images/saigon.png").rate(5.0).build());
+        placeList.add(Place.builder().name("Hội An").image("assets/images/hoian.png").rate(5.0).build());
+        placeList.add(Place.builder().name("Nha Trang").image("assets/images/nhatrang.png").rate(5.0).build());
         return ResponseEntity.ok().body(placeList);
     }
 }
